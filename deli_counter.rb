@@ -3,11 +3,10 @@ def line(current_line)
   if current_line == []
     puts "The line is currently empty."
   else
-    line  = "The line is currently:"
     current_line.each_with_index do |customer, index|
       current_line[index] = " #{index + 1}. #{customer}"
     end
-    puts line + current_line.join
+    puts "The line is currently:#{current_line.join}"
   end
 end
 
